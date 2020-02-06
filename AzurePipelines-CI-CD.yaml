@@ -6,7 +6,7 @@ steps:
 - task: Maven@3
   displayName: 'Maven app/pom.xml'
   inputs:
-    mavenPomFile: 'app/pom.xml'
+    mavenPomFile: 'app/pom.xml' # Removed the parameter and added the exact file path
     codeCoverageToolOption: Cobertura
 
 - task: CopyFiles@2
